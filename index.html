@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <div class="title">Temperature Converter</div>
+      <div class="card">
+        <div class="input-container">
+          <div class="input-text">
+            <input type="number" id="input" name="input" placeholder="Temperature" value="" style="width: calc(100% - 32px);" />
+          </div>
+          <div class="input-button">
+            <button id="trigger" name="trigger" style="width: 100%;">Convert</button>
+          </div>
+        </div>  
+        <div class="input-container">
+          <select name="convert-option" id="convert-option" style="width: 100%">
+            <option value="ftc">Fahrenheit to Celsius</option>
+            <option value="ctf">Celsius to Fahrenheit</option>
+          </select>
+        </div>
+        <div class="output-container">
+          <div class="output-title">Answer : <span id="output" name="output">-</span></div>
+          <div class="output-title">Explanation :</div>
+          <div class="output-text" id="explanation" name="explanation">-</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
